@@ -5,6 +5,3 @@ function App() {
 }
 
 export default App;
-
-//usar tailwind 
-//criar mobile first
