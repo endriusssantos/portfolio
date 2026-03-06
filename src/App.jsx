@@ -1,11 +1,15 @@
 import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <div className="mx-auto max-w-6xl px-12">
-        <Header />
-      </div>
+    <main className="flex h-screen flex-col bg-slate-950 text-white">
+      <Header />
+      <section className="flex flex-1 items-center justify-center">
+        <div className="mx-auto">
+          <Home />
+        </div>
+      </section>
     </main>
   );
 }

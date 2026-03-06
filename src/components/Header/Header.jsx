@@ -3,7 +3,7 @@ import NavItem from "../NavItem/NavItem";
 
 const Header = () => {
   return (
-    <div className="flex justify-between pt-7">
+    <div className="flex justify-between px-10 pt-7">
       <h1 className="text-2xl font-bold">{"< Endrius >"}</h1>
       <nav>
         <ul className="flex gap-6">
