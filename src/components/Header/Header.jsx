@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavItem from "../NavItem/NavItem";
+import NavItemMobile from "../NavItemMobile/NavItemMobile";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,61 +50,21 @@ const Header = () => {
         </button>
 
         <ul className="flex flex-col gap-8 text-2xl text-white">
-          <li>
-            <a
-              href="#home"
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleMenu();
-              }}
-            >
-              Início
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleMenu();
-              }}
-            >
-              Sobre
-            </a>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleMenu();
-              }}
-            >
-              Habilidades
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleMenu();
-              }}
-            >
-              Projetos
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleMenu();
-              }}
-            >
-              Contato
-            </a>
-          </li>
+          <NavItemMobile href="#home" toggleMenu={toggleMenu}>
+            Início
+          </NavItemMobile>
+          <NavItemMobile href="#about" toggleMenu={toggleMenu}>
+            Sobre
+          </NavItemMobile>
+          <NavItemMobile href="#skills" toggleMenu={toggleMenu}>
+            Habilidades
+          </NavItemMobile>
+          <NavItemMobile href="#projects" toggleMenu={toggleMenu}>
+            Projetos
+          </NavItemMobile>
+          <NavItemMobile href="#contact" toggleMenu={toggleMenu}>
+            Contato
+          </NavItemMobile>
         </ul>
       </div>
     </header>
