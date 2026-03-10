@@ -8,7 +8,7 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <header className="relative flex justify-between px-10 pt-7 lg:px-20">
+    <header className="relative flex justify-between px-10 pt-7 pb-4 lg:px-20 border-b border-gray-700">
       <h1 className="text-2xl font-bold">{"< Endrius >"}</h1>
 
       <button
