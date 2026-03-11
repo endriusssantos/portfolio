@@ -8,34 +8,36 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <header className="relative flex justify-between px-10 pt-7 pb-4 lg:px-20 border-b border-gray-700">
-      <h1 className="text-2xl font-bold">{"< Endrius >"}</h1>
+    <>
+      <header className="fixed inset-x-0 top-0 z-40 flex w-full justify-between border-b border-gray-700 bg-slate-950/90 px-10 pt-7 pb-4 backdrop-blur-md lg:px-20">
+        <h1 className="text-2xl font-bold">{"< Endrius >"}</h1>
 
-      <button
-        className="absolute top-7 right-9 flex flex-col gap-1.5 md:hidden"
-        onClick={(e) => {
-          e.stopPropagation();
-          toggleMenu();
-        }}
-        aria-label="Abrir menu"
-      >
-        <span className="h-0.5 w-6 bg-current"></span>
-        <span className="h-0.5 w-6 bg-current"></span>
-        <span className="h-0.5 w-6 bg-current"></span>
-      </button>
+        <button
+          className="absolute top-7 right-9 flex flex-col gap-1.5 md:hidden"
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleMenu();
+          }}
+          aria-label="Abrir menu"
+        >
+          <span className="h-0.5 w-6 bg-current"></span>
+          <span className="h-0.5 w-6 bg-current"></span>
+          <span className="h-0.5 w-6 bg-current"></span>
+        </button>
 
-      <nav>
-        <ul className="hidden gap-6 md:flex">
-          <NavItem href="#home">Início</NavItem>
-          <NavItem href="#about">Sobre</NavItem>
-          <NavItem href="#skills">Habilidades</NavItem>
-          <NavItem href="#projects">Projetos</NavItem>
-          <NavItem href="#contact">Contato</NavItem>
-        </ul>
-      </nav>
+        <nav>
+          <ul className="hidden gap-6 md:flex">
+            <NavItem href="#home">Início</NavItem>
+            <NavItem href="#about">Sobre</NavItem>
+            <NavItem href="#skills">Habilidades</NavItem>
+            <NavItem href="#projects">Projetos</NavItem>
+            <NavItem href="#contact">Contato</NavItem>
+          </ul>
+        </nav>
+      </header>
 
       <div
-        className={`bg-opacity-90 fixed inset-0 z-1 flex transform flex-col items-center justify-center bg-black transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`bg-opacity-90 fixed inset-0 z-50 flex transform flex-col items-center justify-center bg-black transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
         onClick={toggleMenu}
       >
         <button
@@ -67,7 +69,7 @@ const Header = () => {
           </NavItemMobile>
         </ul>
       </div>
-    </header>
+    </>
   );
 };
 

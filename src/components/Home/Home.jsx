@@ -68,7 +68,7 @@ const Home = () => {
             <p>Projetos</p>
           </div>
           <p className="text-4xl font-bold">
-            <CountUp end={20} duration={2} />
+            <CountUp end={50} duration={2} />
             <span className="text-purple-500">+</span>
           </p>
         </div>
