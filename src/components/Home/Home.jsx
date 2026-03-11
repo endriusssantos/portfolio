@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import {
-  BugAntIcon,
+  BookOpenIcon,
   CodeBracketIcon,
   ComputerDesktopIcon,
 } from "@heroicons/react/24/solid";
@@ -28,8 +28,8 @@ const Home = () => {
     };
   }, []);
   return (
-    <>
-      <div className="flex flex-col items-center border-b border-gray-700 px-6 py-10 text-center text-5xl">
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center border-b border-gray-700 px-6 py-10 text-center text-5xl">
         <h2 className="text-5xl font-bold md:text-6xl">
           Olá, eu sou o <span className="text-purple-500">Endrius</span>!
         </h2>
@@ -44,12 +44,12 @@ const Home = () => {
       <div className="mt-8 grid w-full max-w-4xl grid-cols-1 gap-5 px-6 sm:grid-cols-3">
         <div className="flex h-28 flex-col items-center justify-center rounded-2xl border border-gray-700 bg-gray-900 px-4 text-center transition-colors duration-300 hover:bg-gray-800 sm:h-32">
           <div className="mt-2 flex items-center justify-center gap-2 text-xl font-bold">
-            <BugAntIcon className="size-8 text-purple-500" />
-            <p>Bugs Corrigidos</p>
+            <BookOpenIcon className="size-8 text-purple-500" />
+            <p>Estudando</p>
           </div>
           <p className="text-4xl font-bold">
-            <CountUp end={1000} duration={2} separator="." />
-            <span className="text-purple-500">+</span>
+            <CountUp end={3} duration={2} separator="." />
+            <span className="text-purple-500"> anos</span>
           </p>
         </div>
         <div className="flex h-28 flex-col items-center justify-center rounded-2xl border border-gray-700 bg-gray-900 px-4 text-center transition-colors duration-300 hover:bg-gray-800 sm:h-32">
@@ -82,7 +82,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -6,10 +6,10 @@ function App() {
   return (
     <main className="flex min-h-screen flex-col bg-slate-950 pt-20 text-white">
       <Header />
-      <section className="flex min-h-screen flex-1 flex-col items-center justify-center">
+      <section id="home">
         <Home />
       </section>
-      <section className="min-h-screen">
+      <section id="about">
         <About />
       </section>
     </main>
