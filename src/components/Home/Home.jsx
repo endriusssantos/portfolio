@@ -1,5 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import {
+  BugAntIcon,
+  CodeBracketIcon,
+  ComputerDesktopIcon,
+} from "@heroicons/react/24/solid";
+import CountUp from "react-countup";
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -22,18 +28,61 @@ const Home = () => {
     };
   }, []);
   return (
-    <div className="flex flex-col items-center px-6 text-center text-5xl">
-      <h2 className="text-5xl font-bold md:text-6xl">
-        Olá, eu sou o <span className="text-purple-500">Endrius</span>!
-      </h2>
-      <p className="text-2xl text-purple-500 md:text-3xl">
-        <span ref={typedRef}></span>
-      </p>
-      <p className="pt-7 text-lg text-gray-400 md:text-xl max-w-3xl">
-        Desenvolvedor Full-Stack focado em criar aplicações web modernas,
-        performáticas e com ótima experiência para o usuário.
-      </p>
-    </div>
+    <>
+      <div className="flex flex-col items-center border-b border-gray-700 px-6 py-10 text-center text-5xl">
+        <h2 className="text-5xl font-bold md:text-6xl">
+          Olá, eu sou o <span className="text-purple-500">Endrius</span>!
+        </h2>
+        <p className="text-2xl text-purple-500 md:text-3xl">
+          <span ref={typedRef}></span>
+        </p>
+        <p className="max-w-3xl pt-7 text-lg text-gray-400 md:text-xl">
+          Desenvolvedor Full-Stack focado em criar aplicações web modernas,
+          performáticas e com ótima experiência para o usuário.
+        </p>
+      </div>
+      <div className="mt-8 grid w-full max-w-4xl grid-cols-1 gap-5 px-6 sm:grid-cols-3">
+        <div className="flex h-28 flex-col items-center justify-center rounded-2xl border border-gray-700 bg-gray-900 px-4 text-center transition-colors duration-300 hover:bg-gray-800 sm:h-32">
+          <div className="mt-2 flex items-center justify-center gap-2 text-xl font-bold">
+            <BugAntIcon className="size-8 text-purple-500" />
+            <p>Bugs Corrigidos</p>
+          </div>
+          <p className="text-4xl font-bold">
+            <CountUp end={1000} duration={2} separator="." />
+            <span className="text-purple-500">+</span>
+          </p>
+        </div>
+        <div className="flex h-28 flex-col items-center justify-center rounded-2xl border border-gray-700 bg-gray-900 px-4 text-center transition-colors duration-300 hover:bg-gray-800 sm:h-32">
+          <div className="mt-2 flex items-center justify-center gap-2 text-xl font-bold">
+            <CodeBracketIcon className="size-8 text-purple-500" />
+            <p>Tecnologias</p>
+          </div>
+          <p className="text-4xl font-bold">
+            <CountUp end={15} duration={2} />
+            <span className="text-purple-500">+</span>
+          </p>
+        </div>
+        <div className="flex h-28 flex-col items-center justify-center rounded-2xl border border-gray-700 bg-gray-900 px-4 text-center transition-colors duration-300 hover:bg-gray-800 sm:h-32">
+          <div className="mt-2 flex items-center justify-center gap-2 text-xl font-bold">
+            <ComputerDesktopIcon className="size-8 text-purple-500" />
+            <p>Projetos</p>
+          </div>
+          <p className="text-4xl font-bold">
+            <CountUp end={20} duration={2} />
+            <span className="text-purple-500">+</span>
+          </p>
+        </div>
+        <div className="col-span-full mt-5 flex justify-center">
+          <a
+            href="/cv-endrius.pdf"
+            download
+            className="cursor-pointer rounded-2xl bg-purple-500 px-10 py-4 font-semibold transition-colors duration-200 hover:bg-purple-600"
+          >
+            Baixar CV
+          </a>
+        </div>
+      </div>
+    </>
   );
 };
 
