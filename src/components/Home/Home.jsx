@@ -48,7 +48,7 @@ const Home = () => {
             <p>Estudando</p>
           </div>
           <p className="text-4xl font-bold">
-            <CountUp end={3} duration={2} separator="." />
+            <CountUp end={3} duration={2} />
             <span className="text-purple-500"> anos</span>
           </p>
         </div>
