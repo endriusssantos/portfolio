@@ -30,6 +30,8 @@ const SkillIcon = ({ icon: Icon, name, description }) => {
       className="relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onTouchStart={() => setIsHovered(true)}
+      onTouchEnd={() => setIsHovered(false)}
     >
       <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-gray-900 text-4xl text-purple-500 transition-all duration-200 hover:bg-gray-800 hover:shadow-lg">
         <Icon />
