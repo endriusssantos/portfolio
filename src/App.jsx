@@ -1,5 +1,6 @@
 import About from "./components/About/About";
 import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
@@ -24,6 +25,7 @@ function App() {
       <section id="contacts">
         <Contacts />
       </section>
+      <Footer />
     </main>
   );
 }
