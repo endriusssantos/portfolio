@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavItem from "../NavItem/NavItem";
-import NavItemMobile from "../NavItemMobile/NavItemMobile";
+import NavItemMobile from "../NavItem/NavItemMobile";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const Header = () => {
             <NavItem href="#about">Sobre</NavItem>
             <NavItem href="#skills">Habilidades</NavItem>
             <NavItem href="#projects">Projetos</NavItem>
-            <NavItem href="#contact">Contato</NavItem>
+            <NavItem href="#contacts">Contato</NavItem>
           </ul>
         </nav>
       </header>
@@ -64,7 +64,7 @@ const Header = () => {
           <NavItemMobile href="#projects" toggleMenu={toggleMenu}>
             Projetos
           </NavItemMobile>
-          <NavItemMobile href="#contact" toggleMenu={toggleMenu}>
+          <NavItemMobile href="#contacts" toggleMenu={toggleMenu}>
             Contato
           </NavItemMobile>
         </ul>

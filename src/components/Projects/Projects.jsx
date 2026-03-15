@@ -99,7 +99,7 @@ const Projects = () => {
       <p className="max-w-3xl text-center text-lg text-gray-400 md:text-xl">
         Esses são alguns dos meus principais projetos:
       </p>
-      <div className="grid grid-cols-1 items-center justify-center gap-6 text-center md:grid-cols-3">
+      <div className="grid grid-cols-1 items-center justify-center gap-6 text-center md:grid-cols-3 border-t border-gray-700 p-7">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}

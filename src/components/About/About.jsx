@@ -28,7 +28,7 @@ const About = () => {
         desenvolver projetos práticos e contribuir com soluções que gerem valor
         real.
       </p>
-      <div className="grid grid-cols-1 items-center justify-center gap-5 text-center md:grid-cols-2">
+      <div className="grid grid-cols-1 items-center justify-center gap-5 text-center md:grid-cols-2 border-t border-gray-700 pt-10">
         <div className="rounded-2xl border border-gray-700 bg-gray-900 p-6 hover:bg-gray-800 transition-colors duration-300">
           <h3 className="text-2xl text-purple-500">💻 Desenvolvimento Web</h3>
           <p>Criação de interfaces modernas e responsivas.</p>

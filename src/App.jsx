@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Contacts from "./components/Contacts/Contacts";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
@@ -19,6 +20,9 @@ function App() {
       </section>
       <section id="projects">
         <Projects />
+      </section>
+      <section id="contacts">
+        <Contacts />
       </section>
     </main>
   );

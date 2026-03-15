@@ -23,7 +23,7 @@ const ProjectCard = ({
           </span>
         ))}
       </div>
-      <div className="my-2 flex items-center justify-center gap-3">
+      <div className="my-2 flex items-center justify-center gap-3 flex-wrap">
         <a
           href={githubLink}
           target="_blank"

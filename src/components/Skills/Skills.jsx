@@ -210,7 +210,7 @@ const Skills = () => {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-6 text-center">
-      <h2 className="text-5xl font-bold md:text-6xl">
+      <h2 className="border-b border-gray-700 pb-6 text-5xl font-bold md:text-6xl">
         <span className="text-purple-500">Habilidades</span> e Tecnologias
       </h2>
 
