@@ -76,7 +76,7 @@ const Home = () => {
           <a
             href="/cv-endrius.pdf"
             download
-            className="cursor-pointer rounded-2xl bg-purple-500 px-10 py-4 font-semibold transition-colors duration-200 hover:bg-purple-600"
+            className="rounded-2xl border-2 border-purple-400 bg-purple-500 px-6 py-3 text-base font-extrabold text-white shadow-lg transition-colors duration-300 hover:border-purple-600 hover:bg-purple-700 focus:ring-2 focus:ring-purple-300 focus:outline-none"
           >
             Baixar CV
           </a>
