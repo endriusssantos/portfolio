@@ -1,13 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { EnvelopeIcon, DocumentArrowDownIcon } from "@heroicons/react/24/solid";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contacts = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-10 px-10 py-20">
-      <h2 className="text-5xl font-bold md:text-6xl">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-10 px-10 py-20 text-center">
+      <motion.h2
+        className="text-5xl font-bold md:text-6xl"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         Entre em <span className="text-purple-500">Contato</span>
-      </h2>
+      </motion.h2>
       <p className="max-w-3xl text-center text-lg text-gray-400 md:text-xl">
         Vamos conversar! Estou disponível para oportunidades de trabalho,
         colaborações ou apenas para bater um papo sobre tecnologia.

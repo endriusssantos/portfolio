@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { motion } from "framer-motion";
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
   FaReact,
@@ -209,10 +210,16 @@ const Skills = () => {
   }, [activeTab, technologiesData]);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-6 text-center">
-      <h2 className="border-b border-gray-700 pb-6 text-5xl font-bold md:text-6xl">
+    <div className="mx-7 flex min-h-screen flex-col items-center justify-center gap-6 text-center">
+      <motion.h2
+        className="border-b border-gray-700 pb-6 text-5xl font-bold md:text-6xl"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <span className="text-purple-500">Habilidades</span> e Tecnologias
-      </h2>
+      </motion.h2>
 
       <div className="flex flex-wrap justify-center gap-4">
         {tabs.map((tab) => {

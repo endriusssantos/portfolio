@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import { motion } from "framer-motion";
 import {
   BookOpenIcon,
   CodeBracketIcon,
@@ -30,9 +31,15 @@ const Home = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center border-b border-gray-700 px-6 py-10 text-center text-5xl">
-        <h2 className="text-5xl font-bold md:text-6xl">
+        <motion.h2
+          className="text-5xl font-bold md:text-6xl"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           Olá, eu sou o <span className="text-purple-500">Endrius</span>!
-        </h2>
+        </motion.h2>
         <p className="text-2xl text-purple-500 md:text-3xl">
           <span ref={typedRef}></span>
         </p>
