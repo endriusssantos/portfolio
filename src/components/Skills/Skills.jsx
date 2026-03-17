@@ -215,7 +215,7 @@ const Skills = () => {
         className="border-b border-gray-700 pb-6 text-5xl font-bold md:text-6xl"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.2 }}
         viewport={{ once: true }}
       >
         <span className="text-purple-500">Habilidades</span> e Tecnologias
