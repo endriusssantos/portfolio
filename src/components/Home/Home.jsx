@@ -44,7 +44,7 @@ const Home = () => {
           <span ref={typedRef}></span>
         </p>
         <p className="max-w-3xl pt-7 text-lg text-gray-400 md:text-xl">
-          Desenvolvedor Full-Stack focado em criar aplicações web modernas,
+          Desenvolvedor Full-Stack formado, focado em criar aplicações web modernas,
           performáticas e com ótima experiência para o usuário.
         </p>
       </div>

@@ -14,7 +14,7 @@ const About = () => {
         Quem sou <span className="text-purple-500">Eu</span>?
       </motion.h2>
       <p className="max-w-3xl text-center text-lg text-gray-400 md:text-xl">
-        Sou Desenvolvedor Full-Stack, apaixonado por criar interfaces modernas,
+        Sou Desenvolvedor Full-Stack formado, apaixonado por criar interfaces modernas,
         rápidas e intuitivas. Tenho experiência com{" "}
         <span className="text-purple-500">HTML</span>,{" "}
         <span className="text-purple-500">CSS</span>,{" "}
