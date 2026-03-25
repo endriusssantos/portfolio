@@ -20,7 +20,7 @@ const ProjectCard = ({
       />
       <h3 className="flex-0 text-xl font-bold">{title}</h3>
       <p
-        className="flex-1 overflow-hidden text-ellipsis text-gray-400"
+        className="flex-1 overflow-auto text-ellipsis text-gray-400"
         style={{
           display: "-webkit-box",
           WebkitLineClamp: 4,
